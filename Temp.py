@@ -45,7 +45,7 @@ def fill(username, password):
     TwInput.send_keys(temperature)  # 应用新体温
     driver.find_element_by_id("post").click()
     time.sleep(1)
-    driver.find_element_by_xpath("/html/body/div[4]/div[3]/a").click()
+    driver.find_element_by_class_name("layui-layer-btn0").click()
     time.sleep(1)
     print("填报成功!")
     driver.quit()
